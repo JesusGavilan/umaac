@@ -1,20 +1,18 @@
 # User Management & Access Control Service (A)
 
-User management & access control using Python (3.5), Falcon, MySQL/Mariadb/PostgreSQL DB, SQLAlchemy as ORM.
+User management & access control using Python (3.5), minimalist WSGI library Falcon , MySQL/Mariadb/PostgreSQL DB & SQLAlchemy as ORM.
 
-## Getting Started
+## Description
 
-### Prerequisites
+## Requirements
 
-### Development deployment
+## Deployment
 
-### Production deployment
-
-## Authors
+## Author
 
 ## License
 
-# Acknowledgments
+## Acknowledgments
 
 
 
