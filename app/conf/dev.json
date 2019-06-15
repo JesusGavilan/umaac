@@ -1,0 +1,27 @@
+{
+  "application.id": 1,
+  "application.name": "ummac",
+  "application.version": "1.0.0",
+  "database.config": {
+    "host": "db",
+    "database": "dev",
+    "user": "dev",
+    "password": "dev",
+    "echo": "yes",
+    "autocommit": "yes",
+    "pool_recycle": 3600,
+    "pool_size": 10,
+    "pool_timeout": 30,
+    "max_overflow": 30
+  },
+  "log.config": {
+    "level": "DEBUG",
+    "path": "/"
+  },
+  "auth.config": {
+    "secret_key": "lxHtkOOGIGdEc2D3FSbIskeSF9t92bw8VRJT2X-CV6I=",
+    "uuid_len": 10,
+    "token_expires":3600
+  }
+
+}
