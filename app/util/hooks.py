@@ -1,5 +1,5 @@
 import falcon
-from util.errors.errors import AuthorizationError
+from util.error.errors import AuthorizationError
 
 
 def authorization(req, res, resource, params):

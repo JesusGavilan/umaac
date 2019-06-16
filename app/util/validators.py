@@ -1,7 +1,7 @@
 from schema.user import FIELDS
 from cerberus import Validator
 from cerberus.errors import ValidationError
-from util.errors.errors import NotValidParameterError
+from util.error.errors import NotValidParameterError
 
 
 def validate_user_create(req, res, resource, params):
@@ -11,6 +11,14 @@ def validate_user_create(req, res, resource, params):
         'password': FIELDS['password'],
         'details': FIELDS['details'],
         'balance': FIELDS['quantity']
+    }
+    validate(schema, req)
+
+
+def validate_login(req, res, resource, params):
+    schema = {
+        'email': FIELDS['email'],
+        'password': FIELDS['password']
     }
     validate(schema, req)
 
