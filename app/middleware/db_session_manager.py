@@ -1,10 +1,10 @@
 import falcon
 import sqlalchemy.orm.scoping as scoping
 from sqlalchemy.exc import SQLAlchemyError
-import log
+import logging
 from conf import config
-from util.errors.errors import DatabaseError, ERROR_DATABASE_ROLLBACK
-LOG = log.get_logger()
+from util.error.errors import DatabaseError, ERROR_DATABASE_ROLLBACK
+LOG = logging.get_logger()
 
 
 class DBSessionManager(object):

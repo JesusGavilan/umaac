@@ -9,7 +9,7 @@ API_NAME = CONF["application.name"]
 SECRET_KEY = CONF["auth.config"]["secret_key"]
 UUID_LEN = CONF["auth.config"]["uuid_len"]
 UUID_ALPHABET = ''.join(map(chr, range(48, 58)))
-TOKEN_EXPIRES = CONF["auth.config"]["toek_expires"]
+TOKEN_EXPIRES = CONF["auth.config"]["token_expires"]
 
 DATABASE = CONF["database.config"]
 
@@ -23,4 +23,4 @@ DB_POOL_SIZE = DATABASE["pool_size"]
 DB_POOL_TIMEOUT = DATABASE["pool_timeout"]
 DB_POOL_MAX_OVERFLOW = DATABASE["max_overflow"]
 
-LOG_LEVEL = CONF['logging']['level']
+LOG_LEVEL = CONF['log.config']['level']

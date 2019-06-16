@@ -1,7 +1,7 @@
 from util.authorization import decrypt_token
-from util.errors.errors import AuthorizationError
-import log
-LOG = log.get_logger()
+from util.error.errors import AuthorizationError
+import logging
+LOG = logging.get_logger()
 
 
 class AuthorizationHandler(object):

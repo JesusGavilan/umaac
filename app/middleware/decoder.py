@@ -1,7 +1,7 @@
 import json
 import falcon
 
-from util.errors.errors import NotValidParameterError
+from util.error.errors import NotValidParameterError
 
 
 class JSONDecoder(object):
