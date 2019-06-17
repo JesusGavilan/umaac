@@ -1,7 +1,7 @@
 import falcon
 import json
 
-from util.errors.messages import *
+from util.error.message import *
 from collections import OrderedDict
 
 
