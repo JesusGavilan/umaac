@@ -1,5 +1,5 @@
 import falcon
-import logging
+import log
 from sqlalchemy.orm.exc import NoResultFound
 from controller.base import BaseResource
 from util.hooks import authorization
@@ -8,7 +8,7 @@ from model import User, Base
 from util.error.errors import NotValidParameterError, UserNotExistsError, AppError, OperationError
 from util.validators import validate_user_create, validate_money_transfer_create
 
-LOG = logging.get_logger()
+LOG = log.get_logger()
 
 
 class Collection(BaseResource):

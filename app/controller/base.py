@@ -1,11 +1,11 @@
 import falcon
 import json
 
-import logging
+import log
 from util.encoder import encoder
 from collections import OrderedDict
 from util.error.errors import NotSupportedError
-LOG = logging.get_logger()
+LOG = log.get_logger()
 
 
 class BaseResource(object):

@@ -1,7 +1,9 @@
+import os
 import json
 
-with open("dev.json") as config_file:
-        CONF = json.load(config_file)
+basedir = os.path.abspath(os.path.dirname(__file__))
+with open(basedir + "/dev.json") as json_file:
+        CONF = json.load(json_file)
 
 
 API_NAME = CONF["application.name"]

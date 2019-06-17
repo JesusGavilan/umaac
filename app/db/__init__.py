@@ -1,8 +1,8 @@
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker, scoped_session
-import logging
+import log
 from conf import config
-LOG = logging.get_logger()
+LOG = log.get_logger()
 
 
 def get_engine(uri):

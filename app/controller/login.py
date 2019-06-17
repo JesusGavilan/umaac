@@ -4,14 +4,14 @@ from sqlalchemy.orm.exc import NoResultFound
 from cerberus import Validator
 from cerberus.errors import ValidationError
 
-import logging
+import log
 from controller.base import BaseResource
 from util.authorization import verify_password
 from model import User, Base
 from util.error.errors import NotValidParameterError, UserNotExistsError, InvalidPassword, AppError, OperationError
 from util.validators import validate_login
 
-LOG = logging.get_logger()
+LOG = log.get_logger()
 
 
 class Item(BaseResource):
