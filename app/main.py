@@ -4,14 +4,14 @@ start serving the API REST
 """
 import falcon
 
-import logging
+import log
 from wsgiref import simple_server
 from middleware import AuthorizationHandler, JSONDecoder, DBSessionManager
 from controller import base, user, login
 from util.error.errors import AppError
 from db import db_session, init_session
 
-LOG = logging.get_logger()
+LOG = log.get_logger()
 
 
 class App(falcon.API):
@@ -20,9 +20,9 @@ class App(falcon.API):
         LOG.info('Starting API Server')
 
         self.add_route('/', base.BaseResource())
-        self.add_route('/resev/v1/users', user.Collection())
-        self.add_route('/resev/v1/users/{user_id}', user.Item())
-        self.add_route('/resev/v1/users/login', login.Item())
+        self.add_route('/umaac/v1/users', user.Collection())
+        self.add_route('/umaac/v1/users/{user_id}', user.Item())
+        self.add_route('/umaac/v1/users/login', login.Item())
         self.add_error_handler(AppError, AppError.handle)
 
 
